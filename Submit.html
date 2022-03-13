@@ -40,7 +40,10 @@
             <div class="col-md-3 menu_fixed left_col hidden-print">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="#" class="site_title"><span>سامانه جامع پرداخت الکترونیک</span></a>
+                        <a href="#" class="site_title">
+                            <img class="img-responsive main-logo" src="build/images/logo.png" />
+                            <span>سامانه جامع پرداخت الکترونیک</span>
+                        </a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -215,17 +218,6 @@
                     <div class="page-title">
                         <div class="title_left">
                             <h3>اطلاعات پذیرنده</h3>
-                        </div>
-
-                        <div class="title_right">
-                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="جست و جو برای...">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">برو!</button>
-                                    </span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -1812,7 +1804,7 @@
                                                                             </div>
                                                                             <div class="form-group col-md-3 mt-3">
                                                                                 <label class="control-label col-md-5 col-sm-3 col-xs-12" for="store-percent">
-                                                                                   درصد <span class="required">*</span>
+                                                                                    درصد <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-7 col-sm-6 col-xs-12">
                                                                                     <input class="form-control" type="text" id="store-percent" disabled readonly />
@@ -1820,10 +1812,10 @@
                                                                             </div>
                                                                             <div class="form-group col-md-3 mt-3">
                                                                                 <label class="control-label col-md-6 col-sm-3 col-xs-12" for="acc-org-sheba">
-                                                                                   شبا اصلی 
+                                                                                    شبا اصلی
                                                                                 </label>
                                                                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                                                                    <input class="form-control" type="checkbox" id="acc-org-sheba" style="max-width: 25px"/>
+                                                                                    <input class="form-control" type="checkbox" id="acc-org-sheba" style="max-width: 25px" />
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group col-md-4 mt-3">
@@ -1831,7 +1823,7 @@
                                                                                     نام فروشگاه <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                                    <input class="form-control" type="text" id="store-name" required=""  />
+                                                                                    <input class="form-control" type="text" id="store-name" required="" />
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group col-md-4 mt-3">
@@ -1851,10 +1843,93 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group col-md-6 mt-3">
-                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acc-branch-code">
-                                                                                    سرپرست <span class="required">*</span>
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-place-type">
+                                                                                    نوع ملک <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <select id="store-place-type" class="form-control" required>
+                                                                                        <option value="real">تجاری</option>
+                                                                                        <option value="legal">اداری</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6 mt-3">
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-eco-code">
+                                                                                    کد اقتصادی فروشگاه
+                                                                                </label>
+                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-eco-code" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6 mt-3">
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-phone-num">
+                                                                                    شماره تلفن <span class="required">*</span>
+                                                                                </label>
+                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-phone-num" required="" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6 mt-3">
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-mobile-num">
+                                                                                    شماره موبایل <span class="required">*</span>
+                                                                                </label>
+                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-mobile-num" required="" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-contract-num">
+                                                                                    شماره قرارداد
+                                                                                </label>
+                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-contract-num" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="store-contract-start">
+                                                                                    تاریخ شروع قرارداد
+                                                                                </label>
+                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-contract-start" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="store-contract-end">
+                                                                                    تاریخ اتمام قرارداد
+                                                                                </label>
+                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-contract-end" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-licence-num">
+                                                                                    شماره جواز کسب
+                                                                                </label>
+                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-licence-num" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="store-licence-start">
+                                                                                    تاریخ صدور جواز کسب
+                                                                                </label>
+                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-licence-start" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="store-licence-end">
+                                                                                    تاریخ اعتبار جواز کسب
+                                                                                </label>
+                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                    <input class="form-control" type="text" id="store-licence-end" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="store-state">
+                                                                                    استان <span class="required">*</span>
+                                                                                </label>
+                                                                                <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
                                                                                     <div class="mat-dropdown">
                                                                                         <div class="input-group-btn">
                                                                                             <button type="button" class="btn btn-default dropdown-toggle"
@@ -1872,11 +1947,33 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="form-group col-md-6 mt-3">
-                                                                                <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acc-branch-code">
-                                                                                    حساب متعلق به <span class="required">*</span>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="store-city">
+                                                                                    شهر <span class="required">*</span>
                                                                                 </label>
-                                                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
+                                                                                    <div class="mat-dropdown">
+                                                                                        <div class="input-group-btn">
+                                                                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                                    data-toggle="dropdown" aria-expanded="false">
+                                                                                                انتخاب <span class="caret"></span>
+                                                                                            </button>
+                                                                                            <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                                <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                                <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                                                <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                                                <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                                                <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mt-3">
+                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="store-zone">
+                                                                                    منطقه <span class="required">*</span>
+                                                                                </label>
+                                                                                <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
                                                                                     <div class="mat-dropdown">
                                                                                         <div class="input-group-btn">
                                                                                             <button type="button" class="btn btn-default dropdown-toggle"
@@ -2077,13 +2174,26 @@
     <!-- Custom Theme Scripts -->
     <script src="build/js/custom.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
+        $(document).ready(function () {
             $(".b-day").pDatepicker({
                 initialValue: false
             });
             $(".coDate").pDatepicker({
                 initialValue: false
             });
+            $("#store-contract-start").pDatepicker({
+                initialValue: false
+            });
+            $("#store-contract-end").pDatepicker({
+                initialValue: false
+            });
+            $("#store-licence-start").pDatepicker({
+                initialValue: false
+            });
+            $("#store-licence-end").pDatepicker({
+                initialValue: false
+            });
+
             $("#acceptor-type").change(function () {
                 if ($("#acceptor-type option:selected").val() == "legal") {
                     $("#signers-tab").css("display", "block");

@@ -10,66 +10,38 @@
     text-overflow: ellipsis
 }
 
-@font-face {
-    font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb_Black.eot);
-    src: url(../fonts/eot/IRANSansWeb_Black.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb_Black.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb_Black.woff) format('woff'),url(../fonts/ttf/IRANSansWeb_Black.ttf) format('truetype');
-    font-weight: 900;
-    font-style: "normal"
-}
 
 @font-face {
     font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb_Bold.eot);
-    src: url(../fonts/eot/IRANSansWeb_Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb_Bold.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb_Bold.woff) format('woff'),url(../fonts/ttf/IRANSansWeb_Bold.ttf) format('truetype');
-    font-weight: "bold";
-    font-style: "normal"
-}
-
-@font-face {
-    font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb_Medium.eot);
-    src: url(../fonts/eot/IRANSansWeb_Medium.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb_Medium.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb_Medium.woff) format('woff'),url(../fonts/ttf/IRANSansWeb_Medium.ttf) format('truetype');
+    src: url(../fonts/woff/YekanBakhEN04Regular.woff) format('woff'),url(../fonts/ttf/YekanBakhRegular.ttf) format('truetype');
     font-weight: 500;
     font-style: "normal"
 }
 
 @font-face {
     font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb_Light.eot);
-    src: url(../fonts/eot/IRANSansWeb_Light.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb_Light.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb_Light.woff) format('woff'),url(../fonts/ttf/IRANSansWeb_Light.ttf) format('truetype');
+    src: url(../fonts/woff/YekanBakhEN03Light.woff);
     font-weight: 300;
     font-style: "normal"
 }
 
 @font-face {
     font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb_UltraLight.eot);
-    src: url(../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb_UltraLight.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb_UltraLight.woff) format('woff'),url(../fonts/ttf/IRANSansWeb_UltraLight.ttf) format('truetype');
-    font-weight: 200;
-    font-style: "normal"
-}
-
-@font-face {
-    font-family: IRANSans;
-    src: url(../fonts/eot/IRANSansWeb.eot);
-    src: url(../fonts/eot/IRANSansWeb.eot?#iefix) format('embedded-opentype'),url(../fonts/woff2/IRANSansWeb.woff2) format('woff2'),url(../fonts/woff/IRANSansWeb.woff) format('woff'),url(../fonts/ttf/IRANSansWeb.ttf) format('truetype');
+    src: url(../fonts/woff/YekanBakhEN04Regular.woff) format('woff'),url(../fonts/ttf/YekanBakhRegular.ttf) format('truetype');
     font-weight: "normal";
     font-style: "normal"
 }
 
 @font-face {
-    font-family: IRANSans_FaNum;
-    src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot');
-    src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),url('../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),url('../fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),url('../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+    font-family: IRANSans;
+    src: url('../fonts/woff/YekanBakhEN06Bold.woff') format('woff'),url('../fonts/ttf/YekanBakh-Bold.ttf') format('truetype');
     font-weight: 900;
     font-style: "normal"
 }
 
 @font-face {
-    font-family: IRANSans_FaNum;
-    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
-    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),url('../fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),url('../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+    font-family: IRANSans;
+    src: url('../fonts/woff/YekanBakhEN06Bold.woff') format('woff'),url('../fonts/ttf/YekanBakh-Bold.ttf') format('truetype');
     font-weight: "bold";
     font-style: "normal"
 }
@@ -609,8 +581,9 @@ code, pre {
     color: #ecf0f1 !important;
     margin-left: 0 !important;
     line-height: 59px;
+    text-align: center;
     display: block;
-    height: 55px;
+    height: 100%;
     margin: 0;
     padding-right: 10px
 }
@@ -724,7 +697,8 @@ body, body.iransans {
 
     .nav-md .container.body .col-md-3.left_col.menu_fixed {
         height: 100%;
-        position: fixed
+        position: fixed;
+        overflow-y: auto;
     }
 
 .nav-md ul.nav.child_menu li:before {
@@ -737,7 +711,7 @@ body, body.iransans {
     position: absolute;
     left: auto;
     width: 8px;
-    z-index: 1;
+    z-index: 0;
     border-radius: 50%
 }
 
@@ -799,8 +773,9 @@ body {
     float: left;
     background: #34495e;
     border-radius: 0;
-    height: 57px
+    height: 140px;
 }
+
 @media (max-width: 768px) {
     .wizard_horizontal ul.wizard_steps li a .step_no {
         width: 25px !important;
@@ -808,26 +783,33 @@ body {
         line-height: 25px !important;
         font-size: 12px !important;
     }
+
     .wizard_horizontal ul.wizard_steps li a:before {
         top: 10px !important;
     }
+
     ul.bar_tabs {
         display: flex;
     }
+
         ul.bar_tabs > li a {
             padding: 5px 10px !important;
         }
-        .x_content {
-            overflow-x: scroll;
-        }
+
+    .x_content {
+        overflow-x: scroll;
+    }
 }
+
 @media (max-width:991px) {
     .right_col {
         padding: 10px !important
     }
+
     .wizard_horizontal ul.wizard_steps {
         padding: 0;
     }
+
     .nav-md .container.body .right_col {
         margin: 0;
         width: 100%;
@@ -1313,7 +1295,7 @@ a {
     }
 
 .nav.child_menu {
-    display: none
+    display: none;
 }
 
 .nav.side-menu > li, .nav.top_menu > li > a, .nav > li > a {
@@ -1358,7 +1340,7 @@ a {
 }
 
 .nav.side-menu > li {
-    cursor: pointer
+    cursor: pointer;
 }
 
     .nav.side-menu > li > a {
@@ -4526,8 +4508,8 @@ fieldset {
 
 .alert-warning {
     color: #fff;
-    background-color: rgba(243,156,18,.88);
-    border-color: rgba(243,156,18,.88)
+    background-color: rgb(52 73 94);
+    border-color: rgb(23 45 68);
 }
 
 .alert-danger, .alert-error {
@@ -4991,7 +4973,7 @@ img.avatar {
             .wizard_horizontal ul.wizard_steps li a .step_no {
                 width: 40px;
                 height: 40px;
-                line-height: 40px;
+                line-height: 45px;
                 border-radius: 100px;
                 display: block;
                 margin: 0 auto 5px;
@@ -5002,7 +4984,7 @@ img.avatar {
             }
 
             .wizard_horizontal ul.wizard_steps li a.done .step_no, .wizard_horizontal ul.wizard_steps li a.done:before {
-                background: #1abb9c;
+                background: #34495e;
                 color: #fff
             }
 
@@ -5140,6 +5122,7 @@ body.lock {
 #signers-tab {
     display: none;
 }
+
 .call-container {
     padding: 20px;
     border: solid 1px;
@@ -5149,6 +5132,7 @@ body.lock {
     border: solid 1px #34495e45;
     position: relative;
 }
+
 span.call-container-span {
     position: absolute;
     top: -14px;
@@ -5157,6 +5141,7 @@ span.call-container-span {
     border: solid 1px #34495e45;
     border-radius: 3px;
 }
+
 .search-title-mat {
     font-size: 18px;
     background: #1a252fd4;
@@ -5165,15 +5150,18 @@ span.call-container-span {
     color: #fff;
     margin-top: 0;
 }
+
 .search-container-mat {
     display: flex;
     flex-flow: column;
     border: solid 1px #d4d4d4;
     border-top: 0;
 }
+
 .mt-3 {
     margin-top: 15px;
 }
+
 .dropbtn {
     background-color: #414a52;
     color: white;
@@ -5229,6 +5217,7 @@ span.call-container-span {
 .dropdown a:hover {
     background-color: #ddd;
 }
+
 .dropdown-content a label {
     font-weight: normal;
     margin-right: 7px;
@@ -5238,6 +5227,17 @@ span.call-container-span {
     .dropdown-content a label:hover {
         cursor: pointer;
     }
+
 .show {
     display: block;
+}
+
+.modal label {
+    padding-left: 0;
+}
+
+.main-logo {
+    width: 90px;
+    margin: auto;
+    padding: 10px;
 }
