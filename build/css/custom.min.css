@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #26b99a;
+    border-radius: 3px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
 .nowrap, .x_title h2, ul.count2 li, ul.quick-list li {
     white-space: nowrap
 }
@@ -5186,6 +5204,7 @@ span.call-container-span {
     padding: 6px 10px 6px 40px;
     border: none;
     border-bottom: 1px solid #ddd;
+    width: 100%;
 }
 
     .SearchInput:focus {
@@ -5204,7 +5223,7 @@ span.call-container-span {
     min-width: 230px;
     overflow: hidden;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 5;
 }
 
     .dropdown-content a {
@@ -5240,4 +5259,106 @@ span.call-container-span {
     width: 90px;
     margin: auto;
     padding: 10px;
+}
+
+.store-modal .form-horizontal .form-group {
+    padding: 0;
+}
+
+.secondary-button {
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.table-checkbox {
+    vertical-align: middle;
+    margin-right: 5px !important;
+    margin-top: 0 !important;
+}
+
+.doc-table-div {
+    overflow: auto;
+}
+
+.doc-table {
+    min-width: 2300px;
+    /* min-height: 150px; */
+}
+
+    .doc-table td:last-child {
+        min-width: 200px;
+    }
+
+    .doc-table button {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+.ml-3 {
+    margin-left: 10px;
+}
+
+.file-upload {
+    background: #1a3d5c;
+    padding: 4px 14px !important;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+    .file-upload:hover {
+        cursor: pointer;
+    }
+
+.ledger-container {
+    padding: 5px;
+    border: solid 1px #dadada;
+    border-radius: 3px;
+}
+
+    .ledger-container button {
+        margin: 0;
+    }
+
+.guide {
+    float: right;
+    margin-top: 10px;
+    padding: 5px 8px;
+    font-size: 13px;
+    line-height: 14px;
+    border-radius: 3px;
+}
+
+    .guide i {
+        background: #34495e;
+        color: #FFF;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    .guide:hover {
+        cursor: default;
+    }
+
+
+.table-confirm {
+    background: #26b99a;
+    color: #FFF;
+}
+.table-deny {
+    background: rgba(231,76,60,.88);
+    color: #FFF;
 }
