@@ -214,10 +214,10 @@
             <!-- /header content -->
             <!-- page content -->
             <div class="right_col" role="main">
-                <div class="">
+                <div class="x_panel">
                     <div class="page-title">
                         <div class="title_left">
-                            <h3>حسابهای بانکی</h3>
+                            <h3>جزئیات کالاها</h3>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -225,22 +225,22 @@
                     <div class="row">
 
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="x_panel">
+                            <div>
                                 <div class="x_title">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#">خانه</a></li>
-                                            <li class="breadcrumb-item"><a href="#">مدیریت پذیرندگان</a></li>
-                                            <li class="breadcrumb-item"><a href="#">اطلاعات پذیرنده</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">حسابهای بانکی</li>
+                                            <li class="breadcrumb-item"><a href="#">انبار</a></li>
+                                            <li class="breadcrumb-item"><a href="#">جزئیات کالاها</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">صفحه اول</li>
                                         </ol>
                                     </nav>
                                     <div class="ledger-container">
-                                        <button class="btn btn-default" disabled>تغییر کد شعبه و سرپرست</button>
+                                        تعداد انتخاب شده : 0
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
-                                
+
                                 <div class="x_content">
 
                                     <div class="x_panel">
@@ -250,96 +250,78 @@
                                                 <form class="form-horizontal form-label-left">
                                                     <div class="row">
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="rows-count">
-                                                                تعداد ردیف ها
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="row">
+                                                                ردیف
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="rows-count" />
+                                                                <input class="form-control" type="text" id="row" />
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="page-num">
-                                                                شماره صفحه
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="record-count">
+                                                                تعداد رکورد ها
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="page-num" />
+                                                                <input class="form-control" type="text" id="record-count" />
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="name">
-                                                                نام
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acceptor-type">
+                                                                تامین کننده
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="acceptor-track-code" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="lname">
-                                                                نام خانوادگی
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="store-acceptor-code" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="account-num">
-                                                                شماره حساب
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="terminal-num" />
+                                                                <select id="acceptor-type" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="sheba-num">
-                                                               شماره شبا
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="part-number">
+                                                                شماره پارت
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="sheba-num" />
-                                                            </div>
-                                                        </div>         
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acceptor-track-code">
-                                                                کد پیگیری پذیرنده
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="acceptor-national-code" />
+                                                                <input class="form-control" type="text" id="part-number">
                                                             </div>
                                                         </div>
-
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-accept-code">
-                                                               کد پذیرندگی فروشگاه
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="serial-number">
+                                                                شماره سریال
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="store-accept-code" />
+                                                                <input class="form-control" type="text" id="part-number">
                                                             </div>
                                                         </div>
-                                                        
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="tag">
+                                                                برچسب
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <input class="form-control" type="text" id="tag">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="branch-code">
-                                                                کد شعبه
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="box-number">
+                                                                شماره جعبه
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="branch-code" />
+                                                                <input class="form-control" type="text" id="box-number">
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="supervisor">
-                                                                سرپرست
+                                                            <label class="control-label col-md-6 col-sm-3 col-xs-12" for="current-storage">
+                                                                انبار فعلی
                                                             </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="mat-dropdown">
                                                                     <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                data-toggle="dropdown" aria-expanded="false">
                                                                             انتخاب <span class="caret"></span>
                                                                         </button>
                                                                         <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
@@ -351,17 +333,17 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="bank">
-                                                                موسسه مالی
+                                                            <label class="control-label col-md-6 col-sm-3 col-xs-12" for="device-model">
+                                                                مدل دستگاه
                                                             </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="mat-dropdown">
                                                                     <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                data-toggle="dropdown" aria-expanded="false">
                                                                             انتخاب <span class="caret"></span>
                                                                         </button>
                                                                         <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
@@ -373,16 +355,184 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="health-state">
+                                                                وضعیت سلامت
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="health-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="transportation-state">
+                                                                وضعیت حمل و نقل
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="transportation-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="psp-state">
+                                                                وضعیت PSP
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="psp-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="support-state">
+                                                                وضعیت پشتیبانی
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="support-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="confirm-state">
+                                                                وضعیت تایید
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="confirm-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="own-state">
+                                                                وضعیت مالکیت
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <select id="own-state" class="form-control" required>
+                                                                    <option value="">انتخاب کنید</option>
+                                                                    <option value="real">حقیقی</option>
+                                                                    <option value="legal">حقوقی</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-6 col-sm-3 col-xs-12" for="project-title">
+                                                                عنوان پروژه
+                                                            </label>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-6 col-sm-3 col-xs-12" for="device-group">
+                                                                گروه دستگاه
+                                                            </label>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-6 col-sm-3 col-xs-12" for="guarantee">
+                                                                گارانتی کننده
+                                                            </label>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="submit-date">
+                                                                تاریخ درج
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">از</span> <input class="form-control pwt-datepicker-input-element" type="text" id="submit-date-start">  </div>
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">تا</span> <input class="form-control pwt-datepicker-input-element" type="text" id="submit-date-end">  </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="guarantee-date">
+                                                                تاریخ شروع گارانتی
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">از</span> <input class="form-control pwt-datepicker-input-element" type="text" id="guarantee-date-start">  </div>
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">تا</span> <input class="form-control pwt-datepicker-input-element" type="text" id="guarantee-date-end">  </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="guarantee-date-ending">
+                                                                تاریخ پایان گارانتی
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">از</span> <input class="form-control pwt-datepicker-input-element" type="text" id="guarantee-date-ending-start">  </div>
+                                                                <div class="d-flex align-items-center"><span style="width: 20px;">تا</span> <input class="form-control pwt-datepicker-input-element" type="text" id="guarantee-date-ending-end">  </div>
                                                             </div>
                                                         </div>
 
                                                     </div>
-                                                    
                                                     <div class="text-left" style="margin: 15px">
-                                                        <button type="button" class="btn btn-primary">
-                                                            حذف فیلتر
-                                                        </button>
                                                         <button type="button" class="btn btn-primary">
                                                             جستجو
                                                         </button>
@@ -391,83 +541,63 @@
                                                         </button>
                                                     </div>
                                                 </form>
+                                                
+
+
                                                 <div class="x_content doc-table-div">
+                                                    <hr />
+                                                    <div class="form-group col-md-4 mt-3">
+                                                        <label class="control-label col-md-4 col-sm-3 col-xs-12" for="operation">
+                                                            انتخاب عملیات
+                                                        </label>
+                                                        <div class="col-md-8 col-sm-6 col-xs-12">
+                                                            <select id="operation" class="form-control" required>
+                                                                <option value="">انتخاب کنید</option>
+                                                                <option value="real">حقیقی</option>
+                                                                <option value="legal">حقوقی</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                     <table class="table table-striped doc-table">
                                                         <thead>
                                                             <tr>
-                                                                <th>ردیف <input class="table-checkbox" type="checkbox" /> </th>
-                                                                <th>نام </th>
-                                                                <th>نام خانوادگی</th>
-                                                                <th>شماره حساب</th>
-                                                                <th>شماره شبا</th>
-                                                                <th>موسسه مالی</th>
-                                                                <th>کد شعبه</th>
-                                                                <th>سرپرست </th>
-                                                                <th></th>
+                                                                <th>ردیف <input type="checkbox" /></th>
+                                                                <th>مدل دستگاه</th>
+                                                                <th>گروه دستگاه</th>
+                                                                <th>شماره پارت</th>
+                                                                <th>شماره ترمینال</th>
+                                                                <th>عنوان پروژه</th>
+                                                                <th>شماره سریال</th>
+                                                                <th>برچسب</th>
+                                                                <th>تاریخ درج</th>
+                                                                <th>تاریخ شروع گارانتی</th>
+                                                                <th>تاریخ پایان گارانتی</th>
+                                                                <th>شماره جعبه</th>
+                                                                <th>تامین کننده</th>
+                                                                <th>وضعیت سلامت</th>
+                                                                <th>وضعیت مالکیت</th>
+                                                                <th>وضعیت حمل و نقل</th>
+                                                                <th>وضعیت PSP</th>
+                                                                <th>وضعیت پشتیبانی</th>
+                                                                <th>انبار فعلی</th>
+                                                                <th>انبار مقصد</th>
+                                                                <th>جعبه بندی شده</th>
+                                                                <th>اخرین یادداشت</th>
+                                                                <th>تاریخ ارسال TGP</th>
+                                                                <th>تاریخ دریافت</th>
+                                                                <th>تاریخ تحویل TPG</th>
+                                                                <th>کارکرد دستگاه</th>
+                                                                <th>گارانتی کننده</th>
+                                                                <th>مراکز هزینه</th>
+                                                                <th>عملیات</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>1</td>
-                                                                <td>4161380</td>
-                                                                <td>91161695</td>
-                                                                <td>4161380</td>
-                                                                <td>امین</td>
-                                                                <td>GPRS</td>
-                                                                <td>امین</td>
-                                                                <td>مهد کودک</td>
                                                                 <td>
-                                                                    <div class="btn-group ml-3">
-                                                                        <button type="button" class="btn btn-primary">جزئیات</button>
-                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            <span class="caret"></span>
-                                                                            <span class="sr-only">تعویض کرکره</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu" role="menu">
-                                                                            <li>
-                                                                                <a href="#">فروشگاه ها</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#">پذیرنده ها</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="btn-group">
-                                                                        <button type="button" class="btn btn-info">عملیات</button>
-                                                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            <span class="caret"></span>
-                                                                            <span class="sr-only">تعویض کرکره</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu" role="menu">
-                                                                            <li>
-                                                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg12">ویرایش حساب</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                        <div class="modal fade bs-example-modal-lg12" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-                                                                            <div class="modal-dialog modal-lg">
-                                                                                <div class="modal-content">
-                                                                                    <div class="modal-header">
-                                                                                        <button type="button" class="close" data-dismiss="modal">
-                                                                                            <span aria-hidden="true">×</span>
-                                                                                        </button>
-                                                                                        <h4 class="modal-title" id="myModalLabel">ویرایش حساب</h4>
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                        
-
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
+                                                                    رکوردی یافت نشد
                                                                 </td>
                                                             </tr>
-                                                            
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -573,10 +703,22 @@
     <script src="build/js/custom.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#document-submit-date-start").pDatepicker({
+            $("#guarantee-date-start").pDatepicker({
                 initialValue: false
             });
-            $("#document-submit-date-end").pDatepicker({
+            $("#guarantee-date-end").pDatepicker({
+                initialValue: false
+            });
+            $("#submit-date-start").pDatepicker({
+                initialValue: false
+            });
+            $("#submit-date-end").pDatepicker({
+                initialValue: false
+            });
+            $("#guarantee-date-ending-start").pDatepicker({
+                initialValue: false
+            });
+            $("#guarantee-date-ending-end").pDatepicker({
                 initialValue: false
             });
             $("#acceptor-type").change(function () {

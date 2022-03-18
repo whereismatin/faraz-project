@@ -217,7 +217,7 @@
                 <div class="">
                     <div class="page-title">
                         <div class="title_left">
-                            <h3>حسابهای بانکی</h3>
+                            <h3>سرجمع تراکنش ماهیانه</h3>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -231,16 +231,14 @@
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#">خانه</a></li>
                                             <li class="breadcrumb-item"><a href="#">مدیریت پذیرندگان</a></li>
-                                            <li class="breadcrumb-item"><a href="#">اطلاعات پذیرنده</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">حسابهای بانکی</li>
+                                            <li class="breadcrumb-item"><a href="#">سرجمع تراکنش ماهیانه</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">صفحه اول</li>
                                         </ol>
                                     </nav>
-                                    <div class="ledger-container">
-                                        <button class="btn btn-default" disabled>تغییر کد شعبه و سرپرست</button>
-                                    </div>
+                                    
                                     <div class="clearfix"></div>
                                 </div>
-                                
+
                                 <div class="x_content">
 
                                     <div class="x_panel">
@@ -250,40 +248,20 @@
                                                 <form class="form-horizontal form-label-left">
                                                     <div class="row">
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="rows-count">
-                                                                تعداد ردیف ها
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="terminal-num">
+                                                                شماره ترمینال
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="rows-count" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="page-num">
-                                                                شماره صفحه
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="page-num" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-md-4 mt-3">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="name">
-                                                                نام
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="acceptor-track-code" />
-                                                            </div>
-                                                        </div>
+                                                                <input class="form-control" type="text" id="terminal-num">
 
+                                                            </div>
+                                                        </div>
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="lname">
-                                                                نام خانوادگی
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-name">
+                                                                نام فروشگاه
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="store-acceptor-code" />
+                                                                <input class="form-control" type="text" id="store-name">
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
@@ -291,94 +269,182 @@
                                                                 شماره حساب
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="terminal-num" />
+                                                                <input class="form-control" type="text" id="account-num" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="sheba-num">
-                                                               شماره شبا
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="transaction-date">
+                                                                تاریخ تراکنش
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="sheba-num" />
-                                                            </div>
-                                                        </div>         
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acceptor-track-code">
-                                                                کد پیگیری پذیرنده
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="acceptor-national-code" />
+                                                                <div class="d-flex">
+                                                                    <div class="ml-3"><span style="width: 20px;">ماه</span> <input class="form-control" type="text" id="transaction-date-start">  </div>
+                                                                    <div><span style="width: 20px;">سال</span> <input class="form-control" type="text" id="transaction-date-end">  </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="store-accept-code">
-                                                               کد پذیرندگی فروشگاه
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="org-acc-bank">
+                                                                موسسه مالی حساب اصلی
                                                             </label>
                                                             <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="store-accept-code" />
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="project-code">
+                                                                کد پروژه
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="state">
+                                                                استان
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="city">
+                                                                شهر
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="office">
+                                                                دفتر
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="terminal-state">
+                                                                وضعیت ترمینال
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mt-3">
+                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="terminal-category-type">
+                                                                نوع دسته بندی ترمینال
+                                                            </label>
+                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                <div class="mat-dropdown">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                            انتخاب <span class="caret"></span>
+                                                                        </button>
+                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                         
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="branch-code">
-                                                                کد شعبه
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <input class="form-control" type="text" id="branch-code" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="supervisor">
-                                                                سرپرست
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <div class="mat-dropdown">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            انتخاب <span class="caret"></span>
-                                                                        </button>
-                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
-                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
-                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
-                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
-                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group col-md-4 mt-3">
-                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="bank">
-                                                                موسسه مالی
-                                                            </label>
-                                                            <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                <div class="mat-dropdown">
-                                                                    <div class="input-group-btn">
-                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            انتخاب <span class="caret"></span>
-                                                                        </button>
-                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
-                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
-                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
-                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
-                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    
                                                     <div class="text-left" style="margin: 15px">
                                                         <button type="button" class="btn btn-primary">
                                                             حذف فیلتر
@@ -395,77 +461,94 @@
                                                     <table class="table table-striped doc-table">
                                                         <thead>
                                                             <tr>
-                                                                <th>ردیف <input class="table-checkbox" type="checkbox" /> </th>
-                                                                <th>نام </th>
-                                                                <th>نام خانوادگی</th>
+                                                                <th>دوره</th>
+                                                                <th>ترمینال</th>
+                                                                <th>عنوان پروژه</th>
                                                                 <th>شماره حساب</th>
-                                                                <th>شماره شبا</th>
-                                                                <th>موسسه مالی</th>
+                                                                <th>نام فروشگاه</th>
+                                                                <th>کد پذیرندگی فروشگاه</th>
+                                                                <th>دارای تراکنش</th>
+                                                                <th>تعداد کل تراکنش ها</th>
+                                                                <th>تعداد تراکنش مانده گیری</th>
+                                                                <th>تعداد تراکنش قبض</th>
+                                                                <th>تعداد تراکنش خرید</th>
+                                                                <th>تعداد تراکنش شارژ</th>
+                                                                <th>تعداد تراکنش شارژ مستقیم</th>
+                                                                <th>تعداد تراکنش شخص ثالث</th>
+                                                                <th>تعداد تراکنش شارژ گروهی</th>
+                                                                <th>تعداد خرید شناسه دار</th>
+                                                                <th>جمع کل مبلغ</th>
+                                                                <th>جمع قبض</th>
+                                                                <th>جمع خرید</th>
+                                                                <th>جمع شارژ</th>
+                                                                <th>جمع شارژ مستقیم</th>
+                                                                <th>جمع مبلغ شخص ثالث</th>
+                                                                <th>جمع شارژ گروهی</th>
+                                                                <th>جمع خرید شناسه دار</th>
+                                                                <th>نوع دسته بندی ترمینال</th>
+                                                                <th>استان</th>
+                                                                <th>شهر</th>
+                                                                <th>دفتر</th>
+                                                                <th>تاریخ نصب</th>
+                                                                <th>تاریخ انصراف</th>
+                                                                <th>نام موسسه مالی</th>
+                                                                <th>مدل دستگاه</th>
+                                                                <th>نام صنف</th>
+                                                                <th>نوع اتصال</th>
+                                                                <th>پشتیبان اصلی</th>
+                                                                <th>تاریخ تخصیص</th>
+                                                                <th>شماره سریال</th>
                                                                 <th>کد شعبه</th>
-                                                                <th>سرپرست </th>
-                                                                <th></th>
+                                                                <th>تاریخ آخرین PM</th>
+                                                                <th>تاریخ آخرین EM</th>
+                                                                <th>وضعیت ترمینال</th>
+                                                                <th>نوع کاربر</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>1</td>
-                                                                <td>4161380</td>
-                                                                <td>91161695</td>
-                                                                <td>4161380</td>
-                                                                <td>امین</td>
-                                                                <td>GPRS</td>
-                                                                <td>امین</td>
-                                                                <td>مهد کودک</td>
-                                                                <td>
-                                                                    <div class="btn-group ml-3">
-                                                                        <button type="button" class="btn btn-primary">جزئیات</button>
-                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            <span class="caret"></span>
-                                                                            <span class="sr-only">تعویض کرکره</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu" role="menu">
-                                                                            <li>
-                                                                                <a href="#">فروشگاه ها</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#">پذیرنده ها</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="btn-group">
-                                                                        <button type="button" class="btn btn-info">عملیات</button>
-                                                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                            <span class="caret"></span>
-                                                                            <span class="sr-only">تعویض کرکره</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu" role="menu">
-                                                                            <li>
-                                                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg12">ویرایش حساب</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                        <div class="modal fade bs-example-modal-lg12" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-                                                                            <div class="modal-dialog modal-lg">
-                                                                                <div class="modal-content">
-                                                                                    <div class="modal-header">
-                                                                                        <button type="button" class="close" data-dismiss="modal">
-                                                                                            <span aria-hidden="true">×</span>
-                                                                                        </button>
-                                                                                        <h4 class="modal-title" id="myModalLabel">ویرایش حساب</h4>
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                        
-
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </td>
+                                                                <td>140012</td>
+                                                                <td>2258011</td>
+                                                                <td>هدایت تراکنش - منطقه 3</td>
+                                                                <td>55803078</td>
+                                                                <td>تایمکس اصفهان</td>
+                                                                <td>5009126</td>
+                                                                <td><input type="checkbox" /></td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td></td>
+                                                                <td>تهران</td>
+                                                                <td>تهران</td>
+                                                                <td>443663 - تراکنشی - کارگزار فراز رهپویان نوین سانیار</td>
+                                                                <td></td>
+                                                                <td>1400/06/01 - 15:15:33</td>
+                                                                <td>بانک پاسارگاد</td>
+                                                                <td></td>
+                                                                <td>کود ، سم و دارو های شیمیایی محصولات کشاورزی</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>253</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>ترمینال انصراف</td>
+                                                                <td>کارگزار</td>
                                                             </tr>
                                                             
                                                         </tbody>
@@ -577,6 +660,11 @@
                 initialValue: false
             });
             $("#document-submit-date-end").pDatepicker({
+                initialValue: false
+            });
+            $("#document-last-change-start").pDatepicker({
+                initialValue: false
+            }); $("#document-last-change-end").pDatepicker({
                 initialValue: false
             });
             $("#acceptor-type").change(function () {

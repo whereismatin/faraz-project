@@ -5287,10 +5287,12 @@ span.call-container-span {
 .doc-table-div {
     overflow: auto;
 }
+.doc-table th {
+    white-space: nowrap;
+}
 
-.doc-table {
-    min-width: 2300px;
-    /* min-height: 150px; */
+.doc-table td {
+    white-space: nowrap;
 }
 
     .doc-table td:last-child {
@@ -5361,4 +5363,7 @@ span.call-container-span {
 .table-deny {
     background: rgba(231,76,60,.88);
     color: #FFF;
+}
+label {
+    white-space: normal;
 }
