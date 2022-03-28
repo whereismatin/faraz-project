@@ -642,15 +642,19 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#document-submit-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#document-submit-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#document-last-change-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             }); $("#document-last-change-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#acceptor-type").change(function () {
                 if ($("#acceptor-type option:selected").val() == "legal") {

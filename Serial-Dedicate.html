@@ -545,22 +545,28 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#terminal-create-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#terminal-create-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#submit-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#submit-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#guarantee-date-ending-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#guarantee-date-ending-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#acceptor-type").change(function () {
                 if ($("#acceptor-type option:selected").val() == "legal") {

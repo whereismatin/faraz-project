@@ -622,10 +622,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#document-submit-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#document-submit-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#info-type").change(function () {
                 if ($("#info-type option:selected").val() == "excel") {

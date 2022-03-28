@@ -538,28 +538,28 @@
                                                                         <span class="call-container-span">اطلاعات تماس</span>
                                                                         <div class="row">
                                                                             <div class="form-group col-md-4">
-                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="phone-num">
+                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="phone-num">
                                                                                     شماره تماس<span class="required">*</span>
                                                                                 </label>
-                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style=" padding-right: 8px;">
                                                                                     <input type="text" id="phone-num" required="required"
                                                                                            class="form-control col-md-7 col-xs-12">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group col-md-4">
-                                                                                <label class="control-label col-md-6 col-sm-3 col-xs-12" for="mobile-num">
+                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="mobile-num">
                                                                                     تلفن همراه<span class="required">*</span>
                                                                                 </label>
-                                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style=" padding-left: 8px;">
                                                                                     <input type="text" id="mobile-num" name="mobile-num" required="required"
                                                                                            class="form-control col-md-7 col-xs-12">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="form-group col-md-12">
-                                                                                <label for="address" class="control-label col-md-2 col-sm-6 col-xs-12" style="text-align: right">
+                                                                            <div class="form-group col-md-4">
+                                                                                <label for="address" class="control-label col-md-5 col-sm-6 col-xs-12" style="text-align: right">
                                                                                     آدرس محل سکونت
                                                                                 </label>
-                                                                                <div class="col-md-5 col-sm-6 col-xs-12" style="padding-right: 5px;">
+                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style="padding-left:0;">
                                                                                     <textarea class="form-control" rows="4" placeholder=""></textarea>
                                                                                 </div>
                                                                             </div>
@@ -2563,7 +2563,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        
+
                                                                     </form>
 
                                                                 </div>
@@ -3114,22 +3114,68 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(".b-day").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $(".coDate").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#store-contract-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#store-contract-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#store-licence-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#store-licence-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#document-submit-date-start").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#document-submit-date-end").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#shaparak-verify-date-start").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#shaparak-verify-date-end").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#dedication-date-start").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#dedication-date-end").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#install-date-start").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#install-date-end").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#quit-date-start").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
+            });
+            $("#quit-date-end").pDatepicker({
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
 
             $("#acceptor-type").change(function () {

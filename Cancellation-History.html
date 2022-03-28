@@ -543,15 +543,19 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#change-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#change-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#edit-date-start").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             }); $("#edit-date-end").pDatepicker({
-                initialValue: false
+                initialValue: false,
+                format: 'YYYY/MM/DD',
             });
             $("#acceptor-type").change(function () {
                 if ($("#acceptor-type option:selected").val() == "legal") {
