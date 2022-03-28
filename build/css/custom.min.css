@@ -5414,3 +5414,15 @@ label {
         width: 1100px;
     }
 }
+.mat-dropdown {
+    position: relative;
+}
+#mat-text {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: auto;
+}

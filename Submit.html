@@ -410,7 +410,7 @@
                                                                                 جنسیت<span class="required">*</span>
                                                                             </label>
                                                                             <div class="col-md-7 col-sm-6 col-xs-12">
-                                                                                <select id="nationality" class="form-control" required>
+                                                                                <select id="gender" class="form-control" required>
                                                                                     <option value="">انتخاب کنید</option>
                                                                                     <option value="">مرد</option>
                                                                                     <option value="press">زن</option>
@@ -453,7 +453,7 @@
                                                                             <div class="col-md-7 col-sm-6 col-xs-12">
                                                                                 <div class="row">
                                                                                     <div class="col-md-5" style="padding-left: 5px; padding-right: 10px;">
-                                                                                        <select id="nationality" class="form-control" required>
+                                                                                        <select id="id-series" class="form-control" required>
                                                                                             <option value=""></option>
                                                                                             <option value="">الف</option>
                                                                                             <option value="press">د</option>
@@ -461,7 +461,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-2" style=" padding: 7px 10px;">/</div>
                                                                                     <div class="col-md-5" style="padding-right: 5px; padding-left: 10px; ">
-                                                                                        <input type="text" class="form-control col-md-7 col-xs-12">
+                                                                                        <input id="id-series-2" type="text" class="form-control col-md-7 col-xs-12">
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1009,7 +1009,7 @@
                                                                                     جنسیت<span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-7 col-sm-6 col-xs-12">
-                                                                                    <select id="nationality" class="form-control" required>
+                                                                                    <select id="gender" class="form-control" required>
                                                                                         <option value="">انتخاب کنید</option>
                                                                                         <option value="">مرد</option>
                                                                                         <option value="press">زن</option>
@@ -3113,6 +3113,14 @@
     <script src="build/js/custom.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            if ($("#acceptor-type option:selected").val() == "real") {
+                $("#co-date").prop('disabled', true);
+                $("#co-num").prop('disabled', true);
+                $("#co-name").prop('disabled', true);
+                $("#co-en-name").prop('disabled', true);
+                $("#co-eco-code").prop('disabled', true);
+            }
+
             $(".b-day").pDatepicker({
                 initialValue: false,
                 format: 'YYYY/MM/DD',
@@ -3180,8 +3188,50 @@
 
             $("#acceptor-type").change(function () {
                 if ($("#acceptor-type option:selected").val() == "legal") {
+                    $("#first-name").prop('disabled', true);
+                    $("#last-name").prop('disabled', true);
+                    $("#father-name").prop('disabled', true);
+                    $("#en-first-name").prop('disabled', true);
+                    $("#en-last-name").prop('disabled', true);
+                    $("#en-father-name").prop('disabled', true);
+                    $("#gender").prop('disabled', true);
+                    $("#b-day").prop('disabled', true);
+                    $("#export-place").prop('disabled', true);
+                    $("#id-number").prop('disabled', true);
+                    $("#id-series").prop('disabled', true);
+                    $("#id-series").prop('disabled', true);
+                    $("#id-series-2").prop('disabled', true);
+                    $("#id-serial").prop('disabled', true);
+
+                    $("#co-date").prop('disabled', false);
+                    $("#co-num").prop('disabled', false);
+                    $("#co-name").prop('disabled', false);
+                    $("#co-en-name").prop('disabled', false);
+                    $("#co-eco-code").prop('disabled', false);
+
                     $("#signers-tab").css("display", "block");
                 } else if ($("#acceptor-type option:selected").val() == "real") {
+                    $("#first-name").prop('disabled', false);
+                    $("#last-name").prop('disabled', false);
+                    $("#father-name").prop('disabled', false);
+                    $("#en-first-name").prop('disabled', false);
+                    $("#en-last-name").prop('disabled', false);
+                    $("#en-father-name").prop('disabled', false);
+                    $("#gender").prop('disabled', false);
+                    $("#b-day").prop('disabled', false);
+                    $("#export-place").prop('disabled', false);
+                    $("#id-number").prop('disabled', false);
+                    $("#id-series").prop('disabled', false);
+                    $("#id-series").prop('disabled', false);
+                    $("#id-series-2").prop('disabled', false);
+                    $("#id-serial").prop('disabled', false);
+
+                    $("#co-date").prop('disabled', true);
+                    $("#co-num").prop('disabled', true);
+                    $("#co-name").prop('disabled', true);
+                    $("#co-en-name").prop('disabled', true);
+                    $("#co-eco-code").prop('disabled', true);
+
                     $("#signers-tab").css("display", "none");
 
                 }

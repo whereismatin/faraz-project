@@ -321,14 +321,16 @@
                                                                         </button>
                                                                         <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
                                                                             <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
-                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
-                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
-                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                    <span id="mat-text"></span>
 
+                                                                </div>
+                                                               
                                                             </div>
                                                         </div>
                                                         <div class="form-group col-md-4 mt-3">
@@ -343,10 +345,10 @@
                                                                         </button>
                                                                         <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
                                                                             <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
-                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
-                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
-                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -376,10 +378,10 @@
                                                                         </button>
                                                                         <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
                                                                             <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
-                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
-                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
-                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -470,10 +472,10 @@
                                                                                 </div>
                                                                                 <div class="modal-body">
                                                                                     <div class="container">
-                                                                                        <div class="row">
+                                                                                        <div class="row">                                                                                            
                                                                                             <div class="form-group col-md-4">
                                                                                                 <label class="control-label col-md-4 col-sm-3 col-xs-12" for="acceptor-track-code">
-                                                                                                    کد پیگیری پذیرنده 
+                                                                                                    کد پیگیری پذیرنده
                                                                                                 </label>
                                                                                                 <div class="col-md-8 col-sm-8 col-xs-12" style="display:flex">
                                                                                                     <input type="text" id="acceptor-track-code" class="form-control" name="acceptor-track-code">
@@ -489,7 +491,7 @@
                                                                                             </div>
                                                                                             <div class="form-group col-md-4">
                                                                                                 <label class="control-label col-md-4 col-sm-3 col-xs-12" for="terminal-num">
-                                                                                                    شماره ترمینال 
+                                                                                                    شماره ترمینال
                                                                                                 </label>
                                                                                                 <div class="col-md-8 col-sm-8 col-xs-12" style="display:flex">
                                                                                                     <input type="text" id="terminal-num" class="form-control" name="terminal-num">
@@ -686,6 +688,18 @@
         function dropDownSearch() {
 
         }
+        $(".ch-input").change(function () {
+            var Element = $(this);
+            var id = Element.attr('id');
+            var title = $(this).next().text();
+            var textId = 'mat-text-' + id;
+
+            if ($(this).is(':checked')) {
+                $('#mat-text').append("<span id='" + textId + "'>" + title + " , </span>"); // Append the div from out of the loop
+            } else {
+                $('#' + textId).remove();
+            }
+        });
     </script>
 </body>
 </html>
