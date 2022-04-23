@@ -443,10 +443,10 @@
                                                                     <div class="row">
                                                                         <div class="form-group col-md-4">
                                                                             <label class="control-label col-md-5 col-sm-3 col-xs-12" for="id-number">
-                                                                                شماره شناسنامه
+                                                                                شماره شناسنامه <span class="required">*</span>
                                                                             </label>
                                                                             <div class="col-md-7 col-sm-6 col-xs-12">
-                                                                                <input id="id-number" class="form-control col-md-7 col-xs-12" type="text"
+                                                                                <input id="id-number" class="form-control col-md-7 col-xs-12" type="text" required
                                                                                        name="id-number">
                                                                             </div>
                                                                         </div>
@@ -541,30 +541,53 @@
                                                                     <div class="call-container mt-3">
                                                                         <span class="call-container-span">اطلاعات تماس</span>
                                                                         <div class="row">
-                                                                            <div class="form-group col-md-4">
-                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="phone-num">
-                                                                                    شماره تماس<span class="required">*</span>
-                                                                                </label>
-                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style=" padding-right: 8px;">
-                                                                                    <input type="text" id="phone-num" required="required"
-                                                                                           class="form-control col-md-7 col-xs-12">
+                                                                            <div class="col-md-10">
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="control-label col-md-4 col-sm-3 col-xs-12" for="phone-num">
+                                                                                        شماره تماس<span class="required">*</span>
+                                                                                    </label>
+                                                                                    <div class="col-md-8 col-sm-6 col-xs-12" style=" padding-right: 8px;">
+                                                                                        <div class="col-md-7 pl-2">
+                                                                                            <input type="text" id="phone-num" required="required"
+                                                                                                   class="form-control col-md-7 col-xs-12">
+                                                                                        </div>
+                                                                                        <div class="col-md-5 pr-2">
+                                                                                            <div class="d-flex" dir="ltr">
+                                                                                                <input type="text" readonly value="0"
+                                                                                                       class="form-control text-center col-md-7 col-xs-12">
+                                                                                                <input type="text" value="21" maxlength="3"
+                                                                                                       class="form-control text-center col-md-7 col-xs-12">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="form-group col-md-4">
-                                                                                <label class="control-label col-md-5 col-sm-3 col-xs-12" for="mobile-num">
-                                                                                    تلفن همراه<span class="required">*</span>
-                                                                                </label>
-                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style=" padding-left: 8px;">
-                                                                                    <input type="text" id="mobile-num" name="mobile-num" required="required"
-                                                                                           class="form-control col-md-7 col-xs-12">
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="mobile-num">
+                                                                                        تلفن همراه<span class="required">*</span>
+                                                                                    </label>
+                                                                                    <div class="col-md-9 col-sm-6 col-xs-12" style=" padding-left: 8px;">
+                                                                                        <div class="col-md-7 pl-2">
+                                                                                            <input type="text" id="mobile-num" name="mobile-num" required="required"
+                                                                                                   class="form-control col-md-7 col-xs-12">
+                                                                                        </div>
+                                                                                        <div class="col-md-5 pr-2">
+                                                                                            <div class="d-flex" dir="ltr">
+                                                                                                <input type="text" readonly value="0"
+                                                                                                       class="form-control text-center col-md-7 col-xs-12">
+                                                                                                <input type="text" value="912" maxlength="3"
+                                                                                                       class="form-control text-center col-md-7 col-xs-12">
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="form-group col-md-4">
-                                                                                <label for="address" class="control-label col-md-5 col-sm-6 col-xs-12" style="text-align: right">
-                                                                                    آدرس محل سکونت
-                                                                                </label>
-                                                                                <div class="col-md-7 col-sm-6 col-xs-12" style="padding-left:0;">
-                                                                                    <textarea class="form-control" rows="4" placeholder=""></textarea>
+                                                                                <div class="form-group col-md-12">
+                                                                                    <label for="address" class="control-label col-md-2 col-sm-6 col-xs-12" style="text-align: right">
+                                                                                        آدرس محل سکونت
+                                                                                    </label>
+                                                                                    <div class="col-md-10 col-sm-6 col-xs-12" style="padding-left:0;">
+                                                                                        <textarea class="form-control" rows="4" placeholder=""></textarea>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
