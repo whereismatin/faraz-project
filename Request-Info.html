@@ -485,7 +485,7 @@
                                                                                                             <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg17">تغییر مشخصات</a>
                                                                                                         </li>
                                                                                                         <li>
-                                                                                                            <a href="#">تغییر آدرس</a>
+                                                                                                            <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg18">تغییر آدرس</a>
                                                                                                         </li>
                                                                                                     </ul>
                                                                                                 </div>
@@ -713,29 +713,373 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="container mt-3">
-                                                                    <div class="col-md-4">
-                                                                        <label class="control-label col-md-4 col-sm-3 col-xs-12">
-                                                                            فروشگاه<span class="required">*</span>
-                                                                        </label>
-                                                                        <div class="col-md-8 col-sm-6 col-xs-12">
-                                                                            <div class="mat-dropdown">
-                                                                                <div class="input-group-btn">
-                                                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                                                        انتخاب <span class="caret"></span>
-                                                                                    </button>
-                                                                                    <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
-                                                                                        <input type="text" placeholder="جستجو ..." class="SearchInput">
-                                                                                        <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
-                                                                                        <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
-                                                                                        <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
-                                                                                        <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                فروشگاه<span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                                <span id="mat-text"></span>
+                                                                                    <span id="mat-text"></span>
 
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                نام فروشگاه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-12 pl-2">
+                                                                                    <input type="text" id="mobile-num" name="mobile-num" required="required" class="form-control col-md-7 col-xs-12">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                شماره تلفن همراه فروشگاه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-7 pl-2">
+                                                                                    <input type="text" id="mobile-num" name="mobile-num" required="required" class="form-control col-md-7 col-xs-12">
+                                                                                </div>
+                                                                                <div class="col-md-5 pr-2">
+                                                                                    <div class="d-flex" dir="ltr">
+                                                                                        <input type="text" readonly="" value="0" class="form-control text-center col-md-7 col-xs-12">
+                                                                                        <input type="text" value="" maxlength="3" class="form-control text-center col-md-7 col-xs-12">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                نام لاتین فروشگاه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-12 pl-2">
+                                                                                    <input type="text" id="mobile-num" name="mobile-num" required="required" class="form-control col-md-7 col-xs-12">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                شماره تلفن فروشگاه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-7 pl-2">
+                                                                                    <input type="text" id="mobile-num" name="mobile-num" required="required" class="form-control col-md-7 col-xs-12">
+                                                                                </div>
+                                                                                <div class="col-md-5 pr-2">
+                                                                                    <div class="d-flex" dir="ltr">
+                                                                                        <input type="text" readonly="" value="0" class="form-control text-center col-md-7 col-xs-12">
+                                                                                        <input type="text" value="" maxlength="3" class="form-control text-center col-md-7 col-xs-12">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="text-left">
+                                                                        <button type="button" class="btn btn-success">
+                                                                            <i class="fa fa-save ml-3"></i>   ذخیره
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="call-container">
+                                                                    <span class="call-container-span">فروشگاه های پذیرنده</span>
+                                                                    <div class="doc-table-div">
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>فروشگاه </th>
+                                                                                    <th>نام قبلی فروشگاه</th>
+                                                                                    <th>نام جدید فروشگاه</th>
+                                                                                    <th>نام لاتین قبلی فروشگاه</th>
+                                                                                    <th>نام لاتین جدید فروشگاه</th>
+                                                                                    <th>شماره تلفن قبلی فروشگاه</th>
+                                                                                    <th>شماره تلفن جدید فروشگاه</th>
+                                                                                    <th>پیش شماره تلفن قبلی فروشگاه</th>
+                                                                                    <th>پیش شماره تلفن جدید فروشگاه</th>
+                                                                                    <th>شماره تلفن همراه قبلی فروشگاه</th>
+                                                                                    <th>شماره تلفن همراه جدید فروشگاه</th>
+                                                                                    <th>پیش شماره تلفن همراه قبلی فروشگاه</th>
+                                                                                    <th>پیش شماره تلفن همراه جدید فروشگاه</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>رکوردی یافت نشد</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                                                                <button type="button" class="btn btn-primary">ذخیره تغییرات</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal fade bs-example-modal-lg18" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">
+                                                                    <span aria-hidden="true">×</span>
+                                                                </button>
+                                                                <h4 class="modal-title" id="myModalLabel">تغییر آدرس</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="call-container mt-3">
+                                                                    <span class="call-container-span">مشخصات پذیرنده</span>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="col-md-4">
+                                                                                <div class="mb-3">
+                                                                                    <span class="ml-3">کد پیگیری پذیرنده :</span>
+                                                                                    <span>57484658</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="mb-3">
+                                                                                    <span class="ml-3">نوع پذیرنده :</span>
+                                                                                    <span>حقیقی</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="mb-3">
+                                                                                    <span class="ml-3">ملیت :</span>
+                                                                                    <span>ایران</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="mb-3">
+                                                                                    <span class="ml-3">نام پذیرنده :</span>
+                                                                                    <span>علیرضا سپاهی</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="mb-3">
+                                                                                    <span class="ml-3">شماره ملی :</span>
+                                                                                    <span>33445322</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="container">
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                فروشگاه<span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <span id="mat-text"></span>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="container">
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                فروشگاه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <span id="mat-text"></span>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                استان
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <span id="mat-text"></span>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                شهر
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <span id="mat-text"></span>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                منطقه
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox" class="ch-input"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox" class="ch-input"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox" class="ch-input"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox" class="ch-input"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <span id="mat-text"></span>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-7">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                نشانی کد پستی
+                                                                            </label>
+                                                                            <div class="col-md-9 col-sm-6 col-xs-12">
+                                                                                <div class="col-md-6 col-sm-8 col-xs-12">
+                                                                                    <input type="text" class="form-control" required="">
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <button type="button" class="btn btn-primary"><i class="fa fa-filter"></i> استعلام</button>
+                                                                                    <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                                                                <input type="checkbox" />
+                                                                                آدرس
+                                                                            </label>
+                                                                            <div class="col-md-9 col-sm-8 col-xs-12">
+                                                                                <input type="text" class="form-control" required="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="text-left">
+                                                                    <button type="button" class="btn btn-primary"> <i class="fa fa-save ml-3"></i> ذخیره </button>
+                                                                </div>
+                                                                <div class="call-container">
+                                                                    <span class="call-container-span">فروشگاه های پذیرنده</span>
+                                                                    <div class="doc-table-div">
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>فروشگاه </th>
+                                                                                    <th>نام صنف قبلی فروشگاه</th>
+                                                                                    <th>نام صنف جدید فروشگاه</th>
+                                                                                    <th>نام استان قبلی فروشگاه</th>
+                                                                                    <th>نام استان جدید فروشگاه</th>
+                                                                                    <th>نام شهر قبلی فروشگاه</th>
+                                                                                    <th>نام شهر جدید فروشگاه</th>
+                                                                                    <th>نام منطقه قبلی فروشگاه</th>
+                                                                                    <th>نام منطقه جدید فروشگاه</th>
+                                                                                    <th>کد پستی قبلی فروشگاه</th>
+                                                                                    <th>کد پستی جدید فروشگاه</th>
+                                                                                    <th>آدرس قبلی فروشگاه</th>
+                                                                                    <th>آدرس جدید فروشگاه</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>رکوردی یافت نشد</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                             <div class="modal-footer">

@@ -301,6 +301,14 @@
                                                             </span>
                                                         </a>
                                                     </li>
+                                                    <li>
+                                                        <a href="#step-7">
+                                                            <span class="step_no">7</span>
+                                                            <span class="step_descr">
+                                                               بارگذاری اسناد
+                                                            </span>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                                 <div id="step-1">
                                                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
@@ -3036,6 +3044,245 @@
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </div>
+                                                <div id="step-7">
+                                                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <ul id="myTab1" class="nav nav-tabs bar_tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#tab_content11" id="home-tabb"
+                                                                   role="tab" data-toggle="tab"
+                                                                   aria-controls="home"
+                                                                   aria-expanded="true">اطلاعات هویتی</a>
+                                                            </li>
+                                                            <li role="presentation" class="">
+                                                                <a href="#tab_content22" role="tab" id="profile-tabb"
+                                                                   data-toggle="tab" aria-controls="profile"
+                                                                   aria-expanded="false">اطلاعات فروشگاه</a>
+                                                            </li>
+                                                            <li role="presentation" class="">
+                                                                <a href="#tab_content33" role="tab" id="profile-tabb3"
+                                                                   data-toggle="tab" aria-controls="profile"
+                                                                   aria-expanded="false">اطلاعات ترمینال</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="myTabContent2" class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade active in" id="tab_content11"
+                                                                 aria-labelledby="home-tab">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-5 col-sm-3 col-xs-12" for="doc-type">
+                                                                                نوع سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="description">
+                                                                                توضیحات
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <input class="form-control" type="text" id="description" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <label class="file-upload" for="docs">بارگذاری</label>
+                                                                                <input class="form-control" type="file" id="docs" style="display:none" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <button type="button" class="btn btn-success" disabled>افزودن به لیست</button>
+                                                                        </div>
+                                                                        <hr />
+                                                                        <div class="x_content">
+                                                                            <table class="table table-striped">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>ردیف</th>
+                                                                                        <th>نوع سند</th>
+                                                                                        <th>مشاهده فایل</th>
+                                                                                        <th>توضیحات</th>
+                                                                                        <th>وضعیت سند</th>
+                                                                                        <th>دلایل رد سند</th>
+                                                                                        <th>توضیحات رد / تایید سند</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>هیچ رکوردی یافت نشد</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="tab_content22"
+                                                                 aria-labelledby="profile-tab">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-5 col-sm-3 col-xs-12" for="doc-type">
+                                                                                نوع سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="description">
+                                                                                توضیحات
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <input class="form-control" type="text" id="description" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <label class="file-upload" for="docs">بارگذاری</label>
+                                                                                <input class="form-control" type="file" id="docs" style="display:none" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <button type="button" class="btn btn-success" disabled>افزودن به لیست</button>
+                                                                        </div>
+                                                                        <hr />
+                                                                        <div class="x_content">
+                                                                            <table class="table table-striped">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>ردیف</th>
+                                                                                        <th>نوع سند</th>
+                                                                                        <th>مشاهده فایل</th>
+                                                                                        <th>توضیحات</th>
+                                                                                        <th>وضعیت سند</th>
+                                                                                        <th>دلایل رد سند</th>
+                                                                                        <th>توضیحات رد / تایید سند</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>هیچ رکوردی یافت نشد</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="tab_content33"
+                                                                 aria-labelledby="profile-tab">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-5 col-sm-3 col-xs-12" for="doc-type">
+                                                                                نوع سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-7 col-sm-8 col-xs-12" style="display:flex">
+                                                                                <div class="mat-dropdown">
+                                                                                    <div class="input-group-btn">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                                                data-toggle="dropdown" aria-expanded="false">
+                                                                                            انتخاب <span class="caret"></span>
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu SearchDropDown dropdown-content dropdown-menu-right" role="menu">
+                                                                                            <input type="text" placeholder="جستجو ..." class="SearchInput">
+                                                                                            <a href="#"><input id="cbx0" type="checkbox"><label for="cbx0"> مقدار یک</label></a>
+                                                                                            <a href="#"><input id="cbx1" type="checkbox"><label for="cbx1"> مقدار دو</label></a>
+                                                                                            <a href="#"><input id="cbx2" type="checkbox"><label for="cbx2">مقدار سه</label></a>
+                                                                                            <a href="#"><input id="cbx3" type="checkbox"><label for="cbx3">مقدار چهار</label></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12" for="description">
+                                                                                توضیحات
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <input class="form-control" type="text" id="description" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label col-md-4 col-sm-3 col-xs-12">
+                                                                                سند <span class="required">*</span>
+                                                                            </label>
+                                                                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                                                                <label class="file-upload" for="docs">بارگذاری</label>
+                                                                                <input class="form-control" type="file" id="docs" style="display:none" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <button type="button" class="btn btn-success" disabled>افزودن به لیست</button>
+                                                                        </div>
+                                                                        <hr />
+                                                                        <div class="x_content">
+                                                                            <table class="table table-striped">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>ردیف</th>
+                                                                                        <th>نوع سند</th>
+                                                                                        <th>مشاهده فایل</th>
+                                                                                        <th>توضیحات</th>
+                                                                                        <th>وضعیت سند</th>
+                                                                                        <th>دلایل رد سند</th>
+                                                                                        <th>توضیحات رد / تایید سند</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>هیچ رکوردی یافت نشد</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
 
